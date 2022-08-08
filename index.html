@@ -19,15 +19,15 @@
     <nav class="navigation">
       <ul class="nav-list">
         <li class="nav-item">
-          <a href="#" class="nav-link active">Главная</a>
+          <a href="#main" class="nav-link active">Главная</a>
         </li>
-        <li class="nav-item"><a href="#" class="nav-link">Проекты</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Обо мне</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Связаться</a></li>
+        <li class="nav-item"><a href="#portfolio" class="nav-link">Проекты</a></li>
+        <li class="nav-item"><a href="#developer" class="nav-link">Обо мне</a></li>
+        <li class="nav-item"><a href="#feedback" class="nav-link">Связаться</a></li>
       </ul>
     </nav>
   </div>
-  <header class="header conteiner">
+  <header class="header conteiner" id="main">
     <img src="images/avatar.png" alt="Юлия" class="header-photo" height="240" />
     <!-- /.header-photo -->
     <div class="header-text">
@@ -67,7 +67,7 @@
     <!-- /.header-text -->
   </header>
   <!-- /.header -->
-  <section class="portfolio">
+  <section class="portfolio" id="portfolio">
     <div class="conteiner">
       <h2 class="section-heading">Последние проекты</h2>
       <div class="cards">
@@ -111,7 +111,7 @@
       </div>
     </div>
   </section>
-  <section class="developer conteiner">
+  <section class="developer conteiner" id="developer">
     <img src="images/developer.jpg" alt="Юлия" class="developer-photo">
     <div class="developer-about">
       <span class="developer-hello">Рада вас видеть</span>
@@ -123,7 +123,7 @@
       <img src="images/sign.png" alt="Юлия" class="developer-sign">
     </div>
   </section>
-  <section class="skills conteiner">
+  <section class="skills conteiner" id="skills">
     <h2 class="skills-title">Работаю с разными языками и инструментами</h2>
     <ul class="tags">
       <li class="tags-item"><a href="#" class="tag">HTML</a></li>
@@ -137,29 +137,32 @@
     </ul>
   </section>
   <!-- /.skills -->
-  <section class="feedback form-conteiner">
-    <h2 class="feedback-title">Готова обсудить проект...</h2>
-    <form action="#" method="get">
-      <div class="input-group">
-        <label for="username" class="input-label">Имя</label>
-        <input type="text" id="username" class="input">
-      </div>
-      <div class="input-group">
-        <label for="useremail" class="input-label">Email</label>
-        <input type="text" id="useremail" class="input">
-      </div>
-      <div class="input-group">
-        <label for="usermessage" class="input-label">Сообщение</label>
-        <textarea id="usermessage" class="input textarea" cols="30" rows="10"></textarea>
-      </div>
-      <div class="button-group">
-        <button type="submit" class="submit-button">
-          <img src="images/icons/send.svg" alt="send-icon" class="cv-icon" />
-          <span class="cv-text">Отправить</span>
-        </button>
-      </div>
+  <section class="feedback" id="feedback">
+    <img src="images/arm.png" alt="Рука" class="feedback-hand">
+    <div class="form-conteiner">
 
-    </form>
+      <h2 class="feedback-title">Готова обсудить проект...</h2>
+      <form action="#" method="get">
+        <div class="input-group">
+          <label for="username" class="input-label">Имя</label>
+          <input type="text" id="username" class="input">
+        </div>
+        <div class="input-group">
+          <label for="useremail" class="input-label">Email</label>
+          <input type="text" id="useremail" class="input">
+        </div>
+        <div class="input-group">
+          <label for="usermessage" class="input-label">Сообщение</label>
+          <textarea id="usermessage" class="input textarea" cols="30" rows="10"></textarea>
+        </div>
+        <div class="button-group">
+          <button type="submit" class="submit-button">
+            <img src="images/icons/send.svg" alt="send-icon" class="cv-icon" />
+            <span class="cv-text">Отправить</span>
+          </button>
+        </div>
+      </form>
+    </div>
   </section>
   <!-- /.feedback -->
 </body>
